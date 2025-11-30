@@ -1,33 +1,75 @@
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    background-color: lavenderblush;
-    justify-content: center;
-    padding: auto;
+*{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-h1{
-    color: #420252;
+
+header{
+    grid-area: 1;
+    color: #030246;
     text-align: center;
-    background-color: lavender;
+    background-color: rgb(223, 223, 253);
+    padding: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    border: none; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+header h1{
+    margin-left: 20px;
+}
+
+body{
+    background-color: rgba(221, 199, 250, 0.767);
 }
 
 #controls{
+    grid-area: 2;
     margin-bottom: 20px;
-    display:flex;
+    text-align: center;
+    padding: 2%;
 }
 
 table{
-    width: 100%;
+    width: 80%;
     border-collapse: collapse;
     margin-top: 20px;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
 th, td{
     border: 1px solid black;
     padding: 8px;
     text-align: center;
+}
+
+label{
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input[type="search"]{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;
+}
+
+#lookup, #cities{
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 10px 10px;
+    background-color: #314157;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

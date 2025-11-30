@@ -3,6 +3,7 @@ window.onload = function(){
     var country= document.getElementById('country');
     var searchBtn = document.getElementById('lookup');
     var resultsDiv = document.getElementById('result');
+    var citiesBtn = document.getElementById('cities');
 
     var request = new XMLHttpRequest();
 
@@ -13,6 +14,15 @@ window.onload = function(){
         request.open('GET', url, true);
         request.send();
     });
+    
+    citiesBtn.addEventListener("click", function(e){
+        e.preventDefault();
+        var url = "world.php?country=" + country.value + "&context=cities";
+        request.onreadystatechange = fetch;
+        request.open('GET', url, true);
+        request.send();
+    });
+
 
     function fetch(){
         if (request.readyState === XMLHttpRequest.DONE){
