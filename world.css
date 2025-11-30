@@ -1,1 +1,33 @@
-/* Add your own styles */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: lavenderblush;
+    justify-content: center;
+    padding: auto;
+}
+
+h1{
+    color: #420252;
+    text-align: center;
+    background-color: lavender;
+}
+
+#controls{
+    margin-bottom: 20px;
+    display:flex;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
