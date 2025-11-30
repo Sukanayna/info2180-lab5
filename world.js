@@ -2,7 +2,7 @@ window.onload = function(){
 
     var country= document.getElementById('country');
     var searchBtn = document.getElementById('lookup');
-    var resultsDiv = document.getElementById('results');
+    var resultsDiv = document.getElementById('result');
 
     var request = new XMLHttpRequest();
 
@@ -10,7 +10,7 @@ window.onload = function(){
         e.preventDefault();
         var url = "world.php?country=" + country.value;
         request.onreadystatechange = fetch;
-        request.open('GET', url);
+        request.open('GET', url, true);
         request.send();
     });
 
